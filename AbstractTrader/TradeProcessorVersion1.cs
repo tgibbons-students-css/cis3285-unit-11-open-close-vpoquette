@@ -10,6 +10,7 @@ namespace AbstractTrader
 {
     public class TradeProcessorVersion1 : ITradeProcessor
     {
+        // why not use a logger class?
         protected void LogMessage(string message, params object[] args)
         {
             Console.WriteLine(message, args);
